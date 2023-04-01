@@ -62,9 +62,10 @@ public class JavaTypes {
         trueOrFalse = false;
         System.out.println("boolean variable current value: " + trueOrFalse);
 
-        age = 30;
+        age = 15;
         boolean isAdult = age > 18;
         System.out.println("isAdult current value: " + isAdult);
+
 
     }
 }
