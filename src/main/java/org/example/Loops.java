@@ -20,7 +20,7 @@ public class Loops {
             //numberOfRepetitions = numberOfRepetitions -1;
             numberOfRepetitions--;
 
-            //numberOfRepetitions = numberOfRepetitions -2;
+            // numberOfRepetitions = numberOfRepetitions -2;
             // numberOfRepetitions--;
         }
         System.out.println("After loop");
