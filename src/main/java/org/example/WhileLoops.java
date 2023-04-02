@@ -1,6 +1,6 @@
 package org.example;
 
-public class Loops {
+public class WhileLoops {
     public static void main(String[] args) {
         // repeat that line 100 times
 
@@ -21,7 +21,7 @@ public class Loops {
             numberOfRepetitions--;
 
             // numberOfRepetitions = numberOfRepetitions -2;
-            // numberOfRepetitions--;
+            // numberOfRepetitions-=2;
         }
         System.out.println("After loop");
         System.out.println("Number of repetitions is: " + numberOfRepetitions);
