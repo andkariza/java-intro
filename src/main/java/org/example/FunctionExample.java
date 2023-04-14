@@ -13,5 +13,9 @@ public class FunctionExample {
         String revertedWords = reverseHelper.toString();
         System.out.println(revertedWords);
 
+        /*
+            No need to use .toString()
+            System.out.println(reverseHelper);
+         */
     }
 }
