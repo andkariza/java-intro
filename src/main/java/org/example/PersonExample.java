@@ -1,6 +1,7 @@
 package org.example;
 
 import java.io.PipedWriter;
+import java.util.Locale;
 
 public class PersonExample {
     public static void main(String[] args) {
@@ -28,8 +29,8 @@ public class PersonExample {
         System.out.println("phoneNumber code for andressa is: " + andressa.phoneNumber);
         Phone andressaPhone = new Phone();
         andressaPhone.countryCode = "372";
-        
-        
+
+
         andressa.phoneNumber = andressaPhone;
         System.out.println("Country code for andressa is: " + andressa.phoneNumber.countryCode);
         System.out.println("Does it print?");
@@ -39,7 +40,7 @@ public class PersonExample {
         personWithAllFields.name = "john";
         personWithAllFields.surname = "snow";
         personWithAllFields.age = 22;
-        
+
         Address johnSnowAddress = new Address();
         johnSnowAddress.country = "Westeros";
         johnSnowAddress.city = "wall";
@@ -47,7 +48,7 @@ public class PersonExample {
         johnSnowAddress.flatNumber = "7";
         johnSnowAddress.zipCode = "77777";
         personWithAllFields.personAddress = johnSnowAddress;
-        
+
         Phone johnSnowPhone = new Phone();
         johnSnowPhone.countryCode = "11";
         johnSnowPhone.phoneNumber = "88888888";
@@ -59,5 +60,29 @@ public class PersonExample {
                 28,
                 johnSnowAddress,
                 johnSnowPhone);
+        Person with3Values = new Person(
+                "andressa",
+                "Stabelini",
+                28
+        );
+        Person withConstructor2 = new Person(
+                "Mariusz",
+                "Pastuszka",
+                40,
+                null,
+                null);
+
+        System.out.println("Now with all 3 constructors together");
+        Phone newPhone = new Phone("22", "123456");
+        Address newAdress = new Address("Estonia", "Tallinn", "Talli", "5", "11316");
+        Person newPerson = new Person(
+                "Gustavo",
+                "Stabelini",
+                31,
+                newAdress,
+                newPhone
+        );
+
+        System.out.println("Content of newPerson variable: " + newPerson);
     }
 }

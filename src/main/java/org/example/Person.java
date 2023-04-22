@@ -1,6 +1,10 @@
 package org.example;
-
 public class Person {
+     String name;
+     String surname;
+     int age;
+     Address personAddress;
+     Phone phoneNumber;
      public Person(String name, String surname, int age, Address personAddress, Phone phoneNumber) {
           this.name = name;
           this.surname = surname;
@@ -8,20 +12,27 @@ public class Person {
           this.personAddress = personAddress;
           this.phoneNumber = phoneNumber;
      }
-     //defaut constructor - no argument
-     // it's like a function
-     // no retur type
-     //named like a class
-     public Person() {
+     public Person(String name, String surname, int age) {
+          this.name = name;
+          this.surname = surname;
+          this.age = age;
      }
 
-     String name;
-     String surname;
-     int age;
+     @Override
+     public String toString() {
+          return "Person{" +
+                  "name='" + name + '\'' +
+                  ", surname='" + surname + '\'' +
+                  ", age=" + age +
+                  ", personAddress=" + personAddress +
+                  ", phoneNumber=" + phoneNumber +
+                  '}';
+     }
 
-     Address personAddress;
-     Phone phoneNumber;
-
-
-    
+     // default constructor - no arguments
+     // it's like a function/method
+     // no return type
+     // named like a class
+     public Person() {
+     }
 }
