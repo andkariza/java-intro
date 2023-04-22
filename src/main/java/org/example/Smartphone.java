@@ -38,6 +38,10 @@ public class Smartphone {
     public void setModel(String model) {
         this.model = model;
     }
+    public void setModelAndBrand(String newModel, String newBrand){
+        this.model = newModel;
+        this.brand = newBrand;
+    }
 
     @Override
     public String toString() {
