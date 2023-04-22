@@ -42,7 +42,7 @@ public class PersonExample {
         
         Address johnSnowAddress = new Address();
         johnSnowAddress.country = "Westeros";
-        johnSnowAddress.city = "muralha";
+        johnSnowAddress.city = "wall";
         johnSnowAddress.street = "n/s";
         johnSnowAddress.flatNumber = "7";
         johnSnowAddress.zipCode = "77777";
@@ -53,5 +53,11 @@ public class PersonExample {
         johnSnowPhone.phoneNumber = "88888888";
         personWithAllFields.phoneNumber = johnSnowPhone;
 
+
+        Person withConstructor = new Person("Andressa",
+                "Stabelini",
+                28,
+                johnSnowAddress,
+                johnSnowPhone);
     }
 }
